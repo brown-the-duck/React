@@ -1,0 +1,23 @@
+{
+    "folders": [
+		{
+			"name": "src",
+			"path": "/"
+		},
+		{
+			"name": "src",
+			"path": "/~1"
+		}
+	],
+    "settings": {
+        "files.hotExit": "off",
+        "vsliveshare.join.reload.workspaceId": "C78B06BDC08C002A72C7127DE4C5C27EFF43",
+        "vsliveshare.join.reload.workspaceFolder": "C:\\Users\\poo88\\AppData\\Local\\Temp\\vsliveshare\\tmp-C78B06BDC08C002A72C7127DE4C5C27EFF43",
+        "vsliveshare.join.correlationId": "",
+        "extensions.ignoreRecommendations": true,
+        "editor.formatOnSave": false,
+        "typescript.tsc.autoDetect": "off",
+        "debug.allowBreakpointsEverywhere": true,
+        "html.autoClosingTags": false
+    }
+}
