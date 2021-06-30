@@ -1,8 +1,11 @@
 /* 여기서 todo 제목 수정 */
 .TodoTopic{
-    margin-left: 20px;
+    margin-left: 1rem;
+   
     width: 100%;
+
 }
+
 /* .TodoTopic:nth-child(1){
     display: none;
 } */

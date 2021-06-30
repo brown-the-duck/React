@@ -6,12 +6,12 @@ import './App.css';
 const App = () => {
   const [topics, setTopics] = useState([
     {
-      id: 1,
+      id: 'Topic1',
       text: 'School',
       toggle: 'false',
     }
   ]);
-  const nextTopic = useRef(3);
+  const nextTopic = useRef('Topic' + 2);
   const onTopicInsert = useCallback(
     text => {
       const topic = {

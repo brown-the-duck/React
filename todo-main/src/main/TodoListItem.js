@@ -2,7 +2,7 @@ import React from 'react';
 import './TodoListItem.css';
 import { BiDotsVerticalRounded } from "react-icons/bi";
 const TodoListItem = ({ todo }) => {
-    const { text, checked } = todo;
+    const { text } = todo;
     return (
         <div className="TodoListItem">
             <div className="check">

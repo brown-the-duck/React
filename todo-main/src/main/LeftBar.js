@@ -5,8 +5,8 @@ const LeftBar = ({ topics, onToggle }) => {
     return (
         <div className="LeftBar">
             <div className="Topics">
-                {topics.map(topic => (
-                    <LinkTopic topic={topic} onToggle={onToggle} />
+                {topics.map((topic, index) => (
+                    <LinkTopic topic={topic} onToggle={onToggle} key={index} />
                 ))}
             </div>
         </div>

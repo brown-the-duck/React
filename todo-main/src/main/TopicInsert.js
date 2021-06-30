@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { MdAdd } from 'react-icons/md';
+import { RiSearchLine } from 'react-icons/ri';
 import './TopicInsert.css';
 const TopicInsert = ({ onTopicInsert }) => {
     const [value, setValue] = useState('');
@@ -18,6 +19,7 @@ const TopicInsert = ({ onTopicInsert }) => {
                 placeholder="주제 입력"
                 value={value}
                 onChange={onChange} />
+            <RiSearchLine />
             <button type="submit">
                 <MdAdd />
             </button>
