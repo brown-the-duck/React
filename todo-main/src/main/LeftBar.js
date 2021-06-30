@@ -1,11 +1,13 @@
 import React from 'react';
 import './LeftBar.css';
-const LeftBar = () => {
+import LinkTopic from './LinkTopic';
+const LeftBar = ({ topics, onToggle }) => {
     return (
         <div className="LeftBar">
             <div className="Topics">
-                <div>안녕</div>
-                <div>헬로</div>
+                {topics.map(topic => (
+                    <LinkTopic topic={topic} onToggle={onToggle} />
+                ))}
             </div>
         </div>
     )

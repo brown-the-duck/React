@@ -3,6 +3,9 @@
     margin-left: 20px;
     width: 100%;
 }
+/* .TodoTopic:nth-child(1){
+    display: none;
+} */
 .app-title{
     color: #FFA723;
     font-size: 2rem;

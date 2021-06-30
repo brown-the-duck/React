@@ -27,6 +27,8 @@
     align-items: center;
     justify-content: center;
     box-shadow: 2.72222px 6.125px 15.6528px rgba(255, 187, 104, 0.5);
+    outline: none;
+    cursor: pointer;
 }
 .TodoInsert input{
     position: absolute;
@@ -37,6 +39,7 @@
     border: none;
     height: 2rem;
     padding: 0;
+    padding-top: 3px;
     outline: none;
     width: 15rem;
     padding-left: 1rem;

@@ -8,7 +8,7 @@ const TodoTemplate = ({ topics, onTopicInsert }) => {
             <div className="TodoTemplate">
                 <TopicInsert onTopicInsert={onTopicInsert} />
                 <div className="topicWrap">
-                    {topics.map(topic => (
+                    {topics && topics.map(topic => (
                         <TodoTopic topic={topic} key={topic.id} />
                     ))}
                 </div>

@@ -7,10 +7,19 @@
     margin: 2rem;
 }
 .blank{
+    display: block;
+    position: relative;
     height: 2rem;
     background: #FF8F0C;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+.blank>svg{
+    position: absolute;
+    right:0.5rem;
+    top: 0.5rem;
+    color: white;
+    cursor: pointer;
 }
 .TodoListItem:nth-child(3n-1) .blank{
     background: #7386FC;

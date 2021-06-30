@@ -9,6 +9,7 @@
     padding: 1rem;
 }
 .Topics>*{
-    border-bottom: 1px solid black;
+    font-weight: 600;
+    line-height: 2rem;
 }
   

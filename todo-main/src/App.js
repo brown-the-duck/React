@@ -8,23 +8,34 @@ const App = () => {
     {
       id: 1,
       text: 'School',
+      toggle: 'false',
     }
   ]);
   const nextTopic = useRef(3);
   const onTopicInsert = useCallback(
     text => {
-      const todo = {
+      const topic = {
         id: nextTopic.current,
-        text
+        text,
+        show: false,
       };
-      setTopics(topics.concat(todo));
+      setTopics(topics.concat(topic));
       nextTopic.current += 1;
     }, [topics]
   );
+  const onToggle = useCallback(
+    id => {
+      setTopics(
+        topics.map(topic =>
+          topic.id === id ? { ...topic, show: !topic.show } : { ...topic, show: false },
+        ),
+      );
+    }, [topics],
+  );
   return (
     <div>
-      <LeftBar topics={topics} />
-      <TodoTemplate topics={topics} onTopicInsert={onTopicInsert} />
+      <LeftBar topics={topics} onToggle={onToggle} />
+      <TodoTemplate topics={topics} onTopicInsert={onTopicInsert} onToggle={onToggle} />
     </div>
   )
 }
