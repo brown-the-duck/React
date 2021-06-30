@@ -1,0 +1,44 @@
+.TodoInsert{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: block;
+    
+}
+.TodoInsert>button>svg{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    color: #FFA723;
+}
+.TodoInsert>button{
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1rem;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2.72222px 6.125px 15.6528px rgba(255, 187, 104, 0.5);
+}
+.TodoInsert input{
+    position: absolute;
+    right: 2.2rem;
+    bottom: 1rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    height: 2rem;
+    padding: 0;
+    outline: none;
+    width: 15rem;
+    padding-left: 1rem;
+    box-shadow: 2.72222px 6.125px 15.6528px rgba(255, 187, 104, 0.25);
+}

@@ -1,0 +1,14 @@
+.LeftBar{
+    position: fixed;
+    left: 0;
+    width: 20vw;
+
+}
+.Topics{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.Topics>*{
+    border-bottom: 1px solid black;
+}
+  

@@ -1,9 +1,23 @@
 import React, { useState, useRef, useCallback } from 'react';
 import TodoInsert from './TodoInsert';
 import TodoList from './TodoList';
+import './TodoTopic.css';
 const TodoTopic = ({ topic }) => {
-    const [todos, setTodos] = useState(['']);
-    const nextTodo = useRef(1);
+    const [todos, setTodos] = useState([
+        {
+            id: 1,
+            text: "sample1",
+        },
+        {
+            id: 2,
+            text: "sample two dsfsdfsdsdf",
+        },
+        {
+            id: 3,
+            text: "dddd ff"
+        }
+    ]);
+    const nextTodo = useRef(4);
     const onInsert = useCallback(
         text => {
             const todo = {
@@ -15,13 +29,13 @@ const TodoTopic = ({ topic }) => {
         }, [todos]
     );
     return (
-        <div className="TodoTopic" style={{
-            border: '1px solid black',
-            margin: '1rem',
-        }}>
+        <div className="TodoTopic">
             <div className="app-title">{topic.text}</div>
-            <TodoInsert onInsert={onInsert} />
-            <TodoList todos={todos} />
+            <div className="sub">
+                <TodoInsert onInsert={onInsert} />
+                <TodoList todos={todos} />
+            </div>
+
         </div>
     )
 }

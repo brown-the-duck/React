@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { MdAdd } from 'react-icons/md';
+import './TopicInsert.css';
 const TopicInsert = ({ onTopicInsert }) => {
     const [value, setValue] = useState('');
     const onChange = useCallback(e => {
@@ -14,7 +15,7 @@ const TopicInsert = ({ onTopicInsert }) => {
     return (
         <form className="TopicInsert" onSubmit={onSubmit}>
             <input
-                placeholder="할 일 입력"
+                placeholder="주제 입력"
                 value={value}
                 onChange={onChange} />
             <button type="submit">

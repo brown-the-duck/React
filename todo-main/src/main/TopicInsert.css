@@ -1,0 +1,8 @@
+.TopicInsert{
+    position: fixed;
+    left:1rem;
+    top:1rem;
+}
+.TopicInsert>input{
+    width: 8rem;
+}
