@@ -7,11 +7,11 @@ const TodoTopic = ({ topic }) => {
     const { show } = topic;
     const [todos, setTodos] = useState([
         {
-            id: "Todo1",
+            id: 1,
             text: "sample page",
         },
     ]);
-    const nextTodo = useRef("Todo" + 2);
+    const nextTodo = useRef(2);
     const onInsert = useCallback(
         text => {
             const todo = {

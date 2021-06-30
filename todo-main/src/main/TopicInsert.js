@@ -19,7 +19,6 @@ const TopicInsert = ({ onTopicInsert }) => {
                 placeholder="주제 입력"
                 value={value}
                 onChange={onChange} />
-            <RiSearchLine />
             <button type="submit">
                 <MdAdd />
             </button>

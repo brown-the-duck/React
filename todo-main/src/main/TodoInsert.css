@@ -3,12 +3,14 @@
     right: 0;
     bottom: 0;
     display: block;
+
 }
 .TodoInsert:hover{
-    
+
 }
 .TodoInsert>input{
     visibility: hidden;
+  
 }
 .TodoInsert>button>svg{
     background: none;
@@ -17,8 +19,10 @@
     justify-content: center;
     font-weight: 100;
     color: #FFA723;
+    
 }
 .TodoInsert>button{
+    
     position: absolute;
     right: 1.2rem;
     bottom: 1rem;
