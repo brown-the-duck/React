@@ -1,18 +1,18 @@
 import React, { useState, useCallback } from 'react';
 import { MdAdd } from 'react-icons/md';
-const TodoInsert = ({ onInsert }) => {
+const TopicInsert = ({ onTopicInsert }) => {
     const [value, setValue] = useState('');
     const onChange = useCallback(e => {
         setValue(e.target.value);
     }, []);
     const onSubmit = useCallback(e => {
-        onInsert(value);
+        onTopicInsert(value);
         setValue('');
         e.preventDefault();
-    }, [onInsert, value]
+    }, [onTopicInsert, value]
     );
     return (
-        <form className="TodoInsert" onSubmit={onSubmit}>
+        <form className="TopicInsert" onSubmit={onSubmit}>
             <input
                 placeholder="할 일 입력"
                 value={value}
@@ -20,7 +20,7 @@ const TodoInsert = ({ onInsert }) => {
             <button type="submit">
                 <MdAdd />
             </button>
-        </form>
+        </form >
     )
 }
-export default TodoInsert;
+export default TopicInsert;

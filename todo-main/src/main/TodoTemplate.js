@@ -1,8 +1,13 @@
 import React from 'react';
-const TodoTemplate = ({ children }) => {
+import TodoTopic from './TodoTopic';
+import TopicInsert from './TopicInsert';
+const TodoTemplate = ({ topics, onTopicInsert }) => {
     return (
         <div classname="TodoTemplate">
-            <div className="content">{children}</div>
+            <TopicInsert onTopicInsert={onTopicInsert} />
+            {topics && topics.map(topic => (
+                <TodoTopic topic={topic} key={topic.id} />
+            ))}
         </div>
     )
 }
