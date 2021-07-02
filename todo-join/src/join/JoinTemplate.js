@@ -21,7 +21,7 @@ const JoinTemplate = () => {
                         <PwInsert /><PwReInsert />
                     </div>
                     <div className="pw_info">
-                        <p>문자 숫자 기호를 조합하여 8자 이상을 사용하세요</p>
+                        <p>문자, 숫자, 기호를 조합하여 8자 이상을 사용하세요</p>
                         <div className="check_area">
                             <input type="checkbox" className="cb1" /><p style={{ display: 'inline' }}>비밀번호 표시</p>
                         </div>
