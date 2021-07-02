@@ -4,7 +4,7 @@ import './PwReInsert.css';
 const PwReInsert = () => {
     return (
         <form className="PwReInsert">
-            <input placeholder="확인" />
+            <input placeholder="확인" type="password" />
         </form>
     )
 };

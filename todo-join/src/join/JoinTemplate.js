@@ -4,6 +4,7 @@ import PwInsert from './PwInsert';
 import NickInsert from './NickInsert';
 import PwReInsert from './PwReInsert';
 import './JoinTemplate.css';
+import imgA from './join_img.png';
 
 const JoinTemplate = () => {
     return (
@@ -31,6 +32,7 @@ const JoinTemplate = () => {
                     <button className="join_button">가입하기 </button>
                 </div>
             </div>
+            <img src={imgA} alt="이미지" />
         </div>
     )
 };

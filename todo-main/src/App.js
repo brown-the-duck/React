@@ -8,7 +8,7 @@ const App = () => {
     {
       id: 1,
       text: 'School',
-      toggle: 'false',
+      show: 'false',
     }
   ]);
   const nextTopic = useRef(2);
