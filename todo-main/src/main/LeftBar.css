@@ -1,13 +1,16 @@
 .LeftBar{
     position: fixed;
-    left: 0;
-    width: 20vw;
+    left: 0.1rem;
+    width: 18vw;
+    height: 100vw;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
-    font-family: 'NEXON Lv1 Gothic OTF';
+    font-family: 'IBMPlexSansKR-Regular';
+    background: white;
+    box-shadow: 9px 4px 23px rgba(255, 205, 145, 0.25);
 }
 .Topics{
-    margin-top: 2rem;
+    margin-top: 4rem;
     padding: 1rem;
 }
 .Topics>*{
@@ -15,3 +18,16 @@
     line-height: 2rem;
 }
   
+.userID{
+    position: relative;
+    padding-top: 0.5rem;
+    margin: 1rem;
+    color: #A1A1A1;
+}
+hr{
+    top : -0.4rem;
+    border: 1px solid #C8C8C8;
+    position: relative;
+    width: 15vw; 
+    right: 1.5rem;
+}

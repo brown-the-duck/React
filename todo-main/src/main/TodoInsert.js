@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { MdAdd } from 'react-icons/md';
-import './TodoInsert.scss';
+import './TodoInsert.css';
 
 const TodoInsert = ({ onInsert }) => {
     const [value, setValue] = useState('');

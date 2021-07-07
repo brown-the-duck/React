@@ -1,12 +1,12 @@
 .main{
     position: fixed;
-    left: 20vw;
+    left: 15vw;
     top: 0;
 }
 .TodoTemplate{
     margin-left: 4rem;
     background-color: #FFF0DE;
-    width: 80vw;
+    width: 85vw;
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
