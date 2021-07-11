@@ -1,10 +1,12 @@
 import React from 'react';
-import './TodoListItem.css';
 import { BiDotsVerticalRounded } from "react-icons/bi";
-const TodoListItem = ({ todo }) => {
+
+import { useDispatch } from 'react-redux';
+
+const TodoItem = ({ todo }) => {
     const { text } = todo;
     return (
-        <div className="TodoListItem">
+        <div className="TodoItem">
             <div className="check">
                 <div className="blank">
                     <BiDotsVerticalRounded />
@@ -14,4 +16,4 @@ const TodoListItem = ({ todo }) => {
         </div>
     )
 }
-export default TodoListItem;
+export default TodoItem;

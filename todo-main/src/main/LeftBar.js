@@ -1,6 +1,5 @@
 import React from 'react';
-import './LeftBar.css';
-import LinkTopic from './LinkTopic';
+import LinkToGroup from './LinkToGroup';
 const LeftBar = ({ topics, onToggle }) => {
     return (
         <div className="LeftBar">
@@ -8,7 +7,7 @@ const LeftBar = ({ topics, onToggle }) => {
             <div className="Topics">
                 <hr className="line" />
                 {topics.map((topic, index) => (
-                    <LinkTopic topic={topic} onToggle={onToggle} key={index} />
+                    <LinkToGroup topic={topic} onToggle={onToggle} key={index} />
                 ))}
             </div>
         </div>

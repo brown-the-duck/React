@@ -1,10 +1,9 @@
 import React from 'react';
-import './LinkTopic.css';
 import cn from 'classnames';
-const LinkTopic = ({ topic, onToggle }) => {
+const LinkToGroup = ({ topic, onToggle }) => {
     const { text, show, id } = topic;
     return (
-        <div className={cn('LinkTopic', { show })} onClick={() => onToggle(id)}>
+        <div className={cn('LinkToGroup', { show })} onClick={() => onToggle(id)}>
             <div className="wrap">
                 <div className="linkText">{text}</div>
                 <div className="count">{id}</div>
@@ -13,4 +12,4 @@ const LinkTopic = ({ topic, onToggle }) => {
         </div>
     )
 }
-export default LinkTopic;
+export default LinkToGroup;

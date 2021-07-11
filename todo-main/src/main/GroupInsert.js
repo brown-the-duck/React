@@ -1,19 +1,18 @@
 import React, { useState, useCallback } from 'react';
 import { MdAdd } from 'react-icons/md';
-import './TopicInsert.css';
-const TopicInsert = ({ onTopicInsert }) => {
+const GroupInsert = ({ onGroupInsert }) => {
     const [value, setValue] = useState('');
     const onChange = useCallback(e => {
         setValue(e.target.value);
     }, []);
     const onSubmit = useCallback(e => {
-        onTopicInsert(value);
+        onGroupInsert(value);
         setValue('');
         e.preventDefault();
-    }, [onTopicInsert, value]
+    }, [onGroupInsert, value]
     );
     return (
-        <form className="TopicInsert" onSubmit={onSubmit}>
+        <form className="GroupInsert" onSubmit={onSubmit}>
             <input
                 placeholder="주제 입력"
                 value={value}
@@ -24,4 +23,4 @@ const TopicInsert = ({ onTopicInsert }) => {
         </form >
     )
 }
-export default TopicInsert;
+export default GroupInsert;
