@@ -1,0 +1,101 @@
+.TodoList{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+/* TodoItem */
+.TodoItem{
+    height: 14rem;
+    width: 15rem;
+    margin: 2rem;
+}
+.TodoItem> .topArea{
+    display: block;
+    position: relative;
+    height: 2rem;
+    background: #FF8F0C;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+}
+.TodoItem svg{
+    position: absolute;
+    right:0.5rem;
+    top: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+.TodoItem:nth-child(3n-1) .topArea{
+    background: #7386FC;
+}
+.TodoItem:nth-child(3n) .topArea{
+    background:     #8F37FF;
+}
+
+.TodoItem> .TodoContent{
+    padding: 1rem;
+    height:10rem;
+    font-size: 1rem;
+    background: #FFA337;
+    overflow: hidden;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.TodoItem:nth-child(3n-1) .TodoContent{
+    background: #7C91FC;
+}
+.TodoItem:nth-child(3n) .TodoContent{
+    background: #AB69FF;
+}
+
+/* TodoInsert */
+.TodoInsert button{
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1rem;
+    background: #FFA723;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2.72222px 6.125px 15.6528px rgba(255, 187, 104, 0.5);
+    outline: none;
+    cursor: pointer;
+}
+.TodoInsert input{
+    font-size: 1.2rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 1rem;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: none;
+    height: 4rem;
+    padding-left: 2rem;
+    padding-top: 3px;
+    outline: none;
+    width: 20rem;
+    padding-left: 1rem;
+    box-shadow: 2.72222px 6.125px 15.6528px rgba(255, 187, 104, 0.25);
+}
+.TodoInsert input::placeholder{
+    padding-left: 1.5rem;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+.TodoInsert svg{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    color: white;
+    font-size:3rem;
+}
