@@ -1,0 +1,17 @@
+.IdInsert>input{
+    border: 1.6px solid #DADCE0;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    font-family: 'IBMPlexSansKR-Regular';
+    outline: none;
+}
+
+.IdInsert>input::placeholder{
+    color:#7E8388; 
+    padding-left: 0.5rem;
+}
+.IdInsert>input:hover{
+    border: 1.6px solid #FFA723;
+}
