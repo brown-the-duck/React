@@ -17,7 +17,7 @@ const TodoList = () => {
 
     return (
         <div>
-            <div classname="GroupName"></div>
+            <div className="GroupName"></div>
             <div className='TodoList'>
                 {todos.map((todo) => (
                     <TodoItem id={todo.id} content={todo.content} key={todo.id} />

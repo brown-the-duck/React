@@ -1,7 +1,7 @@
 import React from 'react';
 import './sample.css';
 
-const TodoItem = ({ id, content }) => {
+const TodoItem = ({ id, title }) => {
 
 
     return (
@@ -10,7 +10,7 @@ const TodoItem = ({ id, content }) => {
 
             </div>
             <div className="TodoContent">
-                {content}
+                {title}
             </div>
         </div>
     );

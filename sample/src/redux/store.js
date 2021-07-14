@@ -1,7 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import todoReducer from './todoSlice';
+import groups from './groupSlice';
+import todoSlice from './todoSlice';
 export default configureStore({
     reducer: {
-        todos: todoReducer,
+        todos: todoSlice,
+        grops: groups
     },
 });
