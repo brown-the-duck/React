@@ -23,6 +23,7 @@ const App = () => {
 
   return (
     <div>
+      <h2>todo sample</h2>
       <form onSubmit={onSubmit}>
         <input
           value={text}
